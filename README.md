@@ -3,6 +3,7 @@
 
 Requirements:
  - NIM & NIMPLE
+ - parsetoml (NIMPLE)
  - MAKE
  - GIT
 
