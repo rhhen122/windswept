@@ -1,1 +1,1 @@
-var Version: float = 0.2
+var Version: float = 0.3
