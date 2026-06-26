@@ -1,6 +1,7 @@
 # WindSwept Main.Nim File (Compile This)
 
 import os, parseopt, strformat, osproc
+include "modules/update"
 include "project/info"
 include "commands"
 include "modules/help"
@@ -35,6 +36,8 @@ proc main() =
                     var buildCommandShell = execCmdEx("make build")
                     echo buildCommandShell.output
                     echo buildCommandShell.exitCode
+            of "update", "u":
+                updateWindSwept()
             else:
                 discard
         else:
